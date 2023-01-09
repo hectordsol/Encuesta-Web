@@ -1,8 +1,11 @@
 import React from "react";
+import FormEncuesta from './FormEncuesta';
+
+
 const Encuesta = () =>{
 
     return (
-        <h1>Encuesta</h1>
+        <FormEncuesta/>
     )
 }
 export default Encuesta;

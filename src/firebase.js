@@ -1,8 +1,7 @@
 import { initializeApp } from "firebase/app";
-
 import { getFirestore } from "firebase/firestore";
 
-const firebaseConfig= {
+var firebaseConfig= {
         apiKey: "AIzaSyBbXg8DQaIIK0zRX0nCFVrMVYSbPJrENog",
         authDomain: "encuestajson.firebaseapp.com",
         projectId: "encuestajson",
@@ -12,5 +11,4 @@ const firebaseConfig= {
         measurementId: "G-XYC3R1Y8RE"
       };
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-export default db;
+export const db = getFirestore(app);
