@@ -45,7 +45,6 @@ const handleInputChange = e =>{
       {value=e.target.checked;}
     let index = database.findIndex(i=>i.name===name);
     database[index].value=value;
-    console.log(type,name,value);
     setDatabase([...database]);
 }
 const getData=()=>{
@@ -74,7 +73,6 @@ const getData=()=>{
             else return {...i}
         }
         })
-        console.log(result);
         setDatabase(result);
       });
   }
@@ -94,8 +92,7 @@ return (
                   <input className="form-check-input mt-4" type={i.type} key={i.name+i.type}
                           name={i.name} onChange={handleInputChange} value={i.value}/>
                   <label className="form-label mt-4" key={i.label}>{i.label}</label>
-                 </div>
-                 
+                 </div>      
           }
           if(i.type==='select') 
             return <div className="mb-3" key={i.name}>
