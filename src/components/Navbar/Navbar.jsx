@@ -11,14 +11,19 @@ export default function Navbar() {
         <header className={style.navbar}>
             <div className={style.landing}> 
                 <NavLink to="/" >
-                <img id={style.logo} src={LogoLanding} width="30" height="30" alt="" />
+                LANDING
                 </NavLink>
             </div>
             <div className={style.home}>
                 <NavLink to="/home" >
-                <img id={style.logo} src={LogoHome} width="30" height="30" alt="" />
+                ENCUESTA
                 </NavLink>            
             </div>
+            <div className={style.home}>
+                <NavLink to="/encuestas" >
+                RESULTADO DE ENCUESTAS
+                </NavLink>            
+            </div>            
         </header>
     )
 }
